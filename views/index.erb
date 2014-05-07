@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>My Expenses</title>
+</head>
+<body>
+	<table>
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Amount</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @expenses.each do |expense| %>
+            <tr>
+              <td><%= expense.id %></td>
+              <td><%= expense.name %></td>
+              <td><%= expense.amount %></td>
+            </tr>
+			<% end %>     
+			</tbody>          
+    </table>
+</body>
+</html>
